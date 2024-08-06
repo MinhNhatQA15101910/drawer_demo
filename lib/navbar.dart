@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -6,12 +7,18 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: const Color(0xFF23C16B),
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: const Text('Do Nhat'),
-            accountEmail: const Text('dmnhat.pt@gmail.com'),
+            accountName: Text(
+              'Do Nhat',
+              style: GoogleFonts.inter(
+                color: Colors.white,
+              ),
+            ),
+            accountEmail: Text('dmnhat.pt@gmail.com'),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset('assets/avatar.jpeg'),
@@ -26,37 +33,87 @@ class NavBar extends StatelessWidget {
             ),
           ),
           const ListTile(
-            leading: Icon(Icons.file_upload),
-            title: Text('Upload shot'),
+            leading: Icon(
+              Icons.file_upload,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Upload shot',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.account_circle),
-            title: Text('Profile'),
+            leading: Icon(
+              Icons.account_circle,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Profile',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.message),
-            title: Text('Messages'),
+            leading: Icon(
+              Icons.message,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Messages',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.line_axis),
-            title: Text('State'),
+            leading: Icon(
+              Icons.line_axis,
+              color: Colors.white,
+            ),
+            title: Text(
+              'State',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.share),
-            title: Text('Share'),
+            leading: Icon(
+              Icons.share,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Share',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.notifications),
-            title: Text('Notifications'),
+            leading: Icon(
+              Icons.notifications,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Notifications',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const Divider(),
           const ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            leading: Icon(
+              Icons.settings,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Settings',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           const ListTile(
-            leading: Icon(Icons.logout),
-            title: Text('Sign out'),
+            leading: Icon(
+              Icons.logout,
+              color: Colors.white,
+            ),
+            title: Text(
+              'Sign out',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           ),
         ],
       ),

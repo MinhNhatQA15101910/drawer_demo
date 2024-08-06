@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
         drawer: NavBar(),
         appBar: AppBar(
           title: const Text('Navigation Drawer App'),
-          backgroundColor: Colors.pink,
+          backgroundColor: const Color(0xFF23C16B),
         ),
         body: const Center(
           child: Text(
